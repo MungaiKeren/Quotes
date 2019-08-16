@@ -1,8 +1,9 @@
-<div class="container-fluid">
+<div class="container">
+    <h1 class="text-center">Welcome to Quotes</h1>
     <div class="row">
         <div class="col-md-6">
-            <h1>Welcome to Quotes</h1>
-            
+            <h2>Some of the famous quotes include:</h2>
+            <h4 *ngFor='let quote of quotes'>{{quote.name}}</h4>
         </div>
     </div>
 </div>
