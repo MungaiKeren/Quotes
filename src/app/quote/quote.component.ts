@@ -9,9 +9,9 @@ import { Quote } from '../quote';
 export class QuoteComponent implements OnInit {
 
   quotes:Quote[] = [
-    {name:"Every next level of your life will demand a different you."},
-    {name:"Change the world by being yourself."},
-    {name:"Never regret anything that made you smile."},
+    {id:1,name:". Every next level of your life will demand a different you."},
+    {id:2,name:". Change the world by being yourself."},
+    {id:3,name:". Never regret anything that made you smile."},
   ];
 
   constructor() { }
