@@ -14,6 +14,14 @@ export class QuoteComponent implements OnInit {
     new Quote(3,'. Be the best that you can ever be.','Jean Seon','Harriet',new Date(2019,11,16)),    
   ];
 
+
+  addNewQuote(quote){
+    let quoteLength = this.quotes.length;
+    quote.id = quoteLength+1;
+    quote.dateCreated = new Date(quote.dateCreated);
+    this.quotes.push(quote);
+  }
+
   seeDetails(index){
     this.quotes[index].seeDetails = !this.quotes[index].seeDetails;
   }
@@ -21,7 +29,7 @@ export class QuoteComponent implements OnInit {
   deleteQuote(isDelete, index){
     if(isDelete){
 
-      let toDelete=confirm(`Are you sure you want to delete ${this.quotes[index].name}? this quote?`);
+      let toDelete=confirm(`Are you sure you want to delete ${this.quotes[index].name} this quote?`);
 
       if(toDelete){
         this.quotes.splice(index,1);
