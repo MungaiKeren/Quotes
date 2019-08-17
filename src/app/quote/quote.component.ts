@@ -9,11 +9,14 @@ import { Quote } from '../quote';
 export class QuoteComponent implements OnInit {
 
   quotes:Quote[] = [
-    {id:1,name:". Every next level of your life will demand a different you."},
-    {id:2,name:". Change the world by being yourself."},
-    {id:3,name:". Never regret anything that made you smile."},
+    new Quote(1, '. Every new level of your life will demand a different you','Mark Edward','Jane'),
+    new Quote(2,'. Change the world by being yourself.','Jean Seon','Harriet'),
+    new Quote(3,'. Be the best that you can ever be.','Jean Seon','Harriet'),    
   ];
 
+  seeDetails(index){
+    this.quotes[index].seeDetails = !this.quotes[index].seeDetails;
+  }
   constructor() { }
 
   ngOnInit() {
