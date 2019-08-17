@@ -1,6 +1,10 @@
 <div class="container">
     <h1 class="text-center">Welcome to Quotes</h1>
+    <hr>
     <div class="row">
+        <div class="col-md-6">
+            <app-quote-form></app-quote-form>
+        </div>
         <div class="col-md-6">
             <h2>Some of the famous quotes include:</h2>
             <div *ngFor='let quote of quotes;let i = index'>
