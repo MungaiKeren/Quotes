@@ -4,9 +4,9 @@
         <div class="col-md-6">
             <h2>Some of the famous quotes include:</h2>
             <div *ngFor='let quote of quotes;let i = index'>
-                <h5 >{{quote.id}} {{quote.name}} 
-                    <button (click)="quote.upvotes=quote.upvotes+1">Upvote{{quote.upvotes}}</button>
-                    <button (click)="quote.downvotes=quote.downvotes+1">Downvote{{quote.downvotes}}</button>
+                <h5 >{{quote.id}} {{quote.name}} <br>
+                    <button (click)="quote.upvotes=quote.upvotes+1" class="btn btn-sm btn-outline-primary">Upvote {{quote.upvotes}}</button>
+                    <button (click)="quote.downvotes=quote.downvotes+1" class="btn btn-sm btn-outline-secondary" id="btn1">Downvote {{quote.downvotes}}</button>
                 </h5>
 
                 <button (click)='seeDetails(i)' class="btn btn-success btn-sm" id="scndbutton">Show Details</button>
