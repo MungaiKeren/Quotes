@@ -2,7 +2,8 @@
 <form #quoteForm='ngForm'>
     <div class="form-group">
         <label for="Author">Author:</label>
-        <input type="text" required class="form-control" name="name" id="">
+        <input type="text" [(ngModel)]='newQuote.author' required class="form-control" name="name" id="">
+        Display{{newQuote.author}}
     </div>
     <div class="form-group">
         <label for="personSubmitted">Submitted by:</label>
