@@ -1,5 +1,5 @@
 <h2 class="text-center">Create a new quote:</h2>
-<form #quoteForm='ngForm'>
+<form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
     <div class="form-group">
         <label for="Author">Author:</label>
         <input type="text" class="form-control" id="author" [(ngModel)]='newQuote.author' name="author" #author='ngModel' required>
