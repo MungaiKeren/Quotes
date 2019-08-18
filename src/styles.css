@@ -1,2 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
-@import "~bootstrap/dist/css/bootstrap.css"
+@import "~bootstrap/dist/css/bootstrap.css";
+
+.landing-page{
+    background-image: url('https://wallpaperplay.com/walls/full/e/a/4/13616.jpg#.XVlJ7rqeYB0.link');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    /* opacity: 0.9; */
+}

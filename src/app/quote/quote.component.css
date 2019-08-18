@@ -1,10 +1,12 @@
 h1{
     font-family: 'Allerta Stencil', sans-serif;
-
 }
 h2{
     text-decoration: underline;
 }
 #btn1{
     margin-left: 5%;
+}
+#scndbutton{
+    padding: 2%;
 }
