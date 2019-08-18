@@ -29,4 +29,7 @@ Want to contribute? Great!!
 * Create a pull request
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
+## License
+MIT license
+## Screenshot
+<img src="" height="4oopx" width="100%">
