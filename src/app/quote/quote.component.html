@@ -9,7 +9,7 @@
         <div class="col-md-">
             <h2>Some of the famous quotes include:</h2>
             <div *ngFor='let quote of quotes;let i = index'>
-                <h5 class="card-header">Quote {{quote.id}}</h5>
+                <h5 class="card-header text-white" style="background-color: blue">Quote {{quote.id}}</h5>
                 <h5 class="card-body">{{quote.name}}<br></h5>
                 <button (click)='seeDetails(i)' class="btn btn-outline-primary btn-sm" id="scndbutton">Show Details</button>
                 
