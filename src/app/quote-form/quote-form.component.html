@@ -1,6 +1,6 @@
 <div class="overlay">
 <h2 class="text-center text-white">New quote:</h2>
-<form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
+<form (ngSubmit)='submitQuote(); quoteForm.reset()' #quoteForm='ngForm'>
     <div class="form-group">
         <label class="text-white" for="Author">Author:</label>
         <input type="text" class="form-control" id="author" [(ngModel)]='newQuote.author' name="author" #author='ngModel' required>
@@ -30,6 +30,5 @@
         </div>
     </div>
     <button type="submit" class="btn btn-primary">Add Quote</button>
-    <button type="reset" class="btn btn-primary" id="scndbutton">Reset</button>
 </form>
 </div>

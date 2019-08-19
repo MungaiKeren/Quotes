@@ -2,7 +2,7 @@ h2{
     text-decoration: underline;
 }
 .overlay{
-    background-color: rgb(0,0,0,0.5);
+    background-color: rgb(0,0,0,0.9);
     opacity: 0.9;
     border-radius: 10px;
 }

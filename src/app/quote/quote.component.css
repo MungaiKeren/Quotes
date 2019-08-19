@@ -11,7 +11,7 @@ h2{
     padding: 2%;
 }
 .overlay{
-        background-color: rgb(0,0,0,0.5);
-        opacity: 0.9;
+        background-color: rgb(0,0,0,0.8);
+        opacity: 0.8;
         border-radius: 10px;
 }

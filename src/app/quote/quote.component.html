@@ -9,7 +9,7 @@
         <div class="overlay">
             <h2 class="text-white text-center">Some famous quotes:</h2>
             <div *ngFor='let quote of quotes;let i = index'>
-                <div class="card-header">
+                <div class="card-header border-white">
                 <h5 class="text-white">{{quote.name}}<br></h5>
                 <button (click)='seeDetails(i)' class="btn btn-primary btn-sm" id="scndbutton">Show Details</button>
                 
