@@ -10,7 +10,7 @@
             <h2 class="text-white text-center">Some famous quotes:</h2>
             <div *ngFor='let quote of quotes;let i = index'>
                 <div class="card-header border-white">
-                <h5 class="text-white">{{quote.name}}</h5>
+                <h5 appHighlight class="text-white">{{quote.name}}</h5>
                 <button (click)='seeDetails(i)' class="btn btn-primary btn-sm" id="scndbutton">Show Details</button>
                 <app-quote-details *ngIf='quote.seeDetails' bind-quote = 'quote' (isDelete)='deleteQuote($event,i)'>
                 </app-quote-details>
