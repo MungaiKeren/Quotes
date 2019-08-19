@@ -22,7 +22,7 @@ export class QuoteComponent implements OnInit {
     let quoteLength = this.quotes.length;
     quote.id = quoteLength+1;
     quote.dateCreated = new Date(quote.dateCreated);
-    this.quotes.push(quote);
+    this.quotes.unshift(quote);
   }
 
   seeDetails(index){
